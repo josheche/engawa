@@ -1,36 +1,10 @@
-# Aqua
+# Engawa
 
-A website and user system starter.
+**engawa 縁側** - The veranda and/or gate that serves as a link between the outdoor garden and traditional Japanese dwelling. Meant to protect it from the elements or open it completely to the outdoors.
 
-[![Build Status](https://travis-ci.org/jedireza/aqua.svg?branch=master)](https://travis-ci.org/jedireza/aqua)
+## Technology Stack
 
-
-## Features
-
- - Universal front-end website
-   - Basic web pages ready to customize
-   - Contact page with form to email
-   - Account sign-up page
-   - Login pages including forgot and reset password
- - My account area
-   - Stub dashboard ready to customize
-   - Settings screen to update contact info and login credentials
- - Admin back office
-   - Stub dashboard ready to customize
-   - Manage accounts, admins, groups and users
-   - Use groups (like departments) for shared permissions
-   - Granular permissions override group permissions
-
-
-## Live demo
-
-| url                            | username | password |
-|:------------------------------ |:-------- |:-------- |
-| https://getaqua.herokuapp.com/ | root     | root     |
-
-
-## Technology
-
+Engawa leverages the [Aqua](https://github.com/jedireza/aqua) web framework for quick feature development.
 Server side, Aqua is built with the [hapi](https://hapijs.com/) framework.
 We're using [MongoDB](http://www.mongodb.org/) as a data store.
 
@@ -45,17 +19,57 @@ to this wiki
 page](https://github.com/jedireza/aqua/wiki/bcrypt-Installation-Trouble).
 
 
-## API only
+## Contribute
 
-If you don't use React and/or would rather bring your own front-end, checkout
-[Frame](https://github.com/jedireza/frame). It's just the HTTP API parts of Aqua.
+We use the Engawa [waffle](https://waffle.io/josheche/engawa) board for issue tracking and feature development.
+We use [gitflow](https://github.com/nvie/gitflow) for git using Vincent Driessen's branching model.
+
+Follow the branching instructions below.
+
+### Creating feature/release/hotfix/support branches
+
+* To list/start/finish feature branches, use:
+
+  		git flow feature
+  		git flow feature start <name> [<base>]
+  		git flow feature finish <name>
+
+  For feature branches, the `<base>` arg must be a commit on `develop`.
+
+* To push/pull a feature branch to the remote repository, use:
+
+  		git flow feature publish <name>
+		  git flow feature pull <remote> <name>
+
+* To list/start/finish release branches, use:
+
+  		git flow release
+  		git flow release start <release> [<base>]
+  		git flow release finish <release>
+
+  For release branches, the `<base>` arg must be a commit on `develop`.
+
+* To list/start/finish hotfix branches, use:
+
+  		git flow hotfix
+  		git flow hotfix start <release> [<base>]
+  		git flow hotfix finish <release>
+
+  For hotfix branches, the `<base>` arg must be a commit on `master`.
+
+* To list/start support branches, use:
+
+  		git flow support
+  		git flow support start <release> <base>
+
+  For support branches, the `<base>` arg must be a commit on `master`.
 
 
 ## Installation
 
 ```bash
-$ git clone git@github.com:jedireza/aqua.git
-$ cd aqua
+$ git clone git@github.com:josheche/engawa.git
+$ cd engawa
 $ npm install
 ```
 
@@ -84,12 +98,12 @@ they exist: `accounts`, `adminGroups`, `admins`, `authAttempts`, `sessions`,
 ```bash
 $ npm run first-time-setup
 
-# > aqua@0.0.0 first-time-setup /home/jedireza/projects/aqua
+# > aqua@0.0.0 first-time-setup /home/YOURNAME/projects/aqua
 # > node first-time-setup.js
 
 # MongoDB URL: (mongodb://localhost:27017/aqua)
-# Root user email: jedireza@gmail.com
-# Root user password:
+# Root user email: your@emailhere.com
+# Root user password: Badpassword1234
 # Setup complete.
 ```
 
@@ -99,10 +113,10 @@ $ npm run first-time-setup
 ```bash
 $ npm start
 
-# > aqua@0.0.0 start /Users/jedireza/projects/aqua
+# > aqua@0.0.0 start /Users/YOURNAME/projects/engawa
 # > gulp react && gulp
 
-# [23:41:44] Using gulpfile ~/projects/aqua/gulpfile.js
+# [23:41:44] Using gulpfile ~/projects/engawa/gulpfile.js
 # ...
 ```
 
@@ -136,22 +150,6 @@ these environment variables in your production environment:
    installing `devDependencies`, which we need to build the front-end files.
 
 
-## Have a question?
-
-Any issues or questions (no matter how basic), open an issue. Please take the
-initiative to read relevant documentation and be proactive with debugging.
-
- - There are some guides in [the wiki](https://github.com/jedireza/aqua/wiki)
- - Read through [previously asked
-   questions](https://github.com/jedireza/aqua/issues?q=label%3Aquestion%20)
-
-
-## Want to contribute?
-
-Contributions are welcome. If you're changing something non-trivial, you may
-want to submit an issue before creating a large pull request.
-
-
 ## Running tests
 
 [Lab](https://github.com/hapijs/lab) is part of the hapi ecosystem and what we
@@ -160,7 +158,7 @@ use to write all of our tests.
 ```bash
 $ npm test
 
-# > aqua@0.0.0 test /Users/jedireza/projects/aqua
+# > aqua@0.0.0 test /Users/YOURNAME/projects/engawa
 # > lab -t 100 -S -T ./test/lab/transform -L --lint-options '{"extensions":[".js",".jsx"]}' ./test/lab/client-before.js ./test/client/ ./test/lab/client-after.js ./test/server/ ./test/lab/server-after.js ./test/misc/
 
 #  ..................................................
@@ -204,12 +202,13 @@ $ TEST_TARGET=test/server/web/main.js npm run test-server
 $ TEST_TARGET=test/client/actions/api.js npm run test-client
 ```
 
+## Deploying to Heroku
+
+We're using Heroku for hosting.
+
+Follow this link for [instructions on deploying an Aqua app to Heroku](https://github.com/jedireza/aqua/wiki/Deploying-to-Heroku).
+
 
 ## License
 
 MIT
-
-
-## Don't forget
-
-What you build with Aqua is more important than Aqua.

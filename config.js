@@ -24,7 +24,7 @@ const config = {
     baseUrl: {
         $filter: 'env',
         $meta: 'values should not end in "/"',
-        production: 'https://getaqua.herokuapp.com',
+        production: 'https://engawa.herokuapp.com',
         $default: 'http://127.0.0.1:8000'
     },
     authAttempts: {
@@ -52,18 +52,18 @@ const config = {
         port: 465,
         secure: true,
         auth: {
-            user: 'jedireza@gmail.com',
+            user: 'appengawa@gmail.com',
             pass: process.env.SMTP_PASSWORD
         }
     },
     system: {
         fromAddress: {
-            name: 'Aqua',
-            address: 'jedireza@gmail.com'
+            name: 'Engawa',
+            address: 'appengawa@gmail.com'
         },
         toAddress: {
-            name: 'Aqua',
-            address: 'jedireza@gmail.com'
+            name: 'Engawa',
+            address: 'appengawa@gmail.com'
         }
     }
 };

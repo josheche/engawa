@@ -1,4 +1,4 @@
-# Engawa
+# Engawa 🏡 ⛩ 🌱 
 
 **engawa 縁側** - The veranda and/or gate that serves as a link between the outdoor garden and traditional Japanese dwelling. Meant to protect it from the elements or open it completely to the outdoors.
 

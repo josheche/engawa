@@ -14,17 +14,17 @@ class HomePage extends React.Component {
         return (
             <section className="section-home container">
                 <Helmet>
-                    <title>Aqua</title>
+                    <title>engawa</title>
                 </Helmet>
                 <div className="jumbotron">
-                    <h1>Success</h1>
-                    <p className="lead">Your website and user system is ready.</p>
+                    <h1>engawa</h1>
+                    <p className="lead lead-spacing">Your home garden monitor.</p>
                 </div>
                 <div className="row">
                     <div className="col-sm-4">
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h3 className="panel-title">About us</h3>
+                                <h3 className="panel-title">🏡 What is Engawa?</h3>
                             </div>
                             <div className="panel-body">
                                 <p>
@@ -43,7 +43,7 @@ class HomePage extends React.Component {
                     <div className="col-sm-4">
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h3 className="panel-title">Sign up</h3>
+                                <h3 className="panel-title">⛩️ Sign up</h3>
                             </div>
                             <div className="panel-body">
                                 <p>
@@ -61,7 +61,7 @@ class HomePage extends React.Component {
                     <div className="col-sm-4">
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h3 className="panel-title">Contact us</h3>
+                                <h3 className="panel-title">🌱 Contact us</h3>
                             </div>
                             <div className="panel-body">
                                 <p>

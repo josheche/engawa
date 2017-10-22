@@ -1,0 +1,9 @@
+{
+  "apiKey": "1GCKVY7GKW5AOZISAYJS21-OC-U5FCPuvVilEM6scGfEUpSh0",
+  "sharedSecret": "q9lJDRXjvUtEI5DWUWLrjXbGb#ATUIwsa}P/KxSD",
+  "userId": "BCSJIBJ3IDL2AYO35XZP21eCM9OE_Xgz44T5ipWIxZod_gGig",
+  "password": "p0mGBKJP4",
+  "cert": "security/cert.pem",
+  "key": "security/key.pem",
+  "visaUrl": "https://sandbox.api.visa.com/"
+}

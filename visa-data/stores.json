@@ -1,0 +1,146 @@
+[
+    {
+        "matchIndicators": {
+            "merchantCountryCode": "Y",
+            "merchantName": "Y"
+        },
+        "matchScore": "1.7917248",
+        "responseValues": {
+            "merchantCountryCode": "840",
+            "merchantStreetAddress": "219 NW 20th St",
+            "merchantPostalCode": "33127",
+            "merchantState": "MI",
+            "merchantCity": "MIAMI",
+            "paymentAcceptanceMethod": [
+                "F2F"
+            ],
+            "terminalType": [
+                "SWIPE",
+                "CHIP",
+                "PAYWAVE"
+            ],
+            "firstTranDateRange": "In more than 365 days",
+            "lastTranDateRange": "In more than 365 days",
+            "merchantCategoryCode": [
+                "0780"
+            ],
+            "merchantPhoneNumber": [
+                {
+                    "type": "O",
+                    "number": "2133469930"
+                }
+            ],
+            "distance": "10 m",
+            "merchantUrl": [
+                "learn01.io"
+            ],
+            "visaStoreName": "Learn01",
+            "visaMerchantId": "11687107",
+            "locationAddressLongitude": "-80.199228",
+            "merchantCategoryCodeDesc": [
+                "Horticultural Services"
+            ],
+            "visaEnterpriseName": "Learn 01 INC",
+            "primaryMerchantCategoryCode": "",
+            "visaMerchantName": "Learn01",
+            "locationAddressLatitude": "25.795732",
+            "visaStoreId": "125861096"
+        }
+    },
+    {
+        "matchIndicators": {
+            "merchantCountryCode": "Y",
+            "merchantName": "Y"
+        },
+        "matchScore": "1.7917248",
+        "responseValues": {
+            "merchantCountryCode": "840",
+            "merchantStreetAddress": "2200 NW 2nd Ave",
+            "merchantPostalCode": "33127",
+            "merchantState": "MI",
+            "merchantCity": "MIAMI",
+            "paymentAcceptanceMethod": [
+                "F2F"
+            ],
+            "terminalType": [
+                "SWIPE",
+                "CHIP",
+                "PAYWAVE"
+            ],
+            "firstTranDateRange": "In more than 365 days",
+            "lastTranDateRange": "In more than 365 days",
+            "merchantCategoryCode": [
+                "5193"
+            ],
+            "merchantPhoneNumber": [
+                {
+                    "type": "O",
+                    "number": "2133469930"
+                }
+            ],
+            "distance": "50 m",
+            "merchantUrl": [
+                "www.florence.net"
+            ],
+            "visaStoreName": "Florence",
+            "visaMerchantId": "11687107",
+            "locationAddressLongitude": "-80.199121",
+            "merchantCategoryCodeDesc": [
+                "Florists’ Supplies, Nursery Stock and Flowers"
+            ],
+            "visaEnterpriseName": "Florence",
+            "primaryMerchantCategoryCode": "",
+            "visaMerchantName": "Florence",
+            "locationAddressLatitude": "25.797915",
+            "visaStoreId": "125861097"
+        }
+    },
+    {
+        "matchIndicators": {
+            "merchantCountryCode": "Y",
+            "merchantName": "Y"
+        },
+        "matchScore": "1.7917248",
+        "responseValues": {
+            "merchantCountryCode": "840",
+            "merchantStreetAddress": "2041 NW 1st Pl",
+            "merchantPostalCode": "33127",
+            "merchantState": "MI",
+            "merchantCity": "MIAMI",
+            "paymentAcceptanceMethod": [
+                "F2F"
+            ],
+            "terminalType": [
+                "SWIPE",
+                "CHIP",
+                "PAYWAVE"
+            ],
+            "firstTranDateRange": "In more than 365 days",
+            "lastTranDateRange": "In more than 365 days",
+            "merchantCategoryCode": [
+                "5193"
+            ],
+            "merchantPhoneNumber": [
+                {
+                    "type": "O",
+                    "number": "2133469930"
+                }
+            ],
+            "distance": "30 m",
+            "merchantUrl": [
+                "www.plantsvszombies.xyz"
+            ],
+            "visaStoreName": "Plants vs Zombies Store",
+            "visaMerchantId": "11687107",
+            "locationAddressLongitude": "-80.198424",
+            "merchantCategoryCodeDesc": [
+                "Home Supply Warehouse Stores"
+            ],
+            "visaEnterpriseName": "Plants vs Zombies Store",
+            "primaryMerchantCategoryCode": "",
+            "visaMerchantName": "Plants vs Zombies Store",
+            "locationAddressLatitude": "25.796225",
+            "visaStoreId": "125861098"
+        }
+    }
+]

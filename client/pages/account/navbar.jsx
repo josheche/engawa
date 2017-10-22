@@ -50,8 +50,7 @@ class Navbar extends React.Component {
                 <div className="container">
                     <div className="navbar-header">
                         <Link className="navbar-brand" to="/account">
-                            <img className="navbar-logo" src="/public/media/logo-square.png" />
-                            <span className="navbar-brand-label">Aqua</span>
+                            <span className="navbar-brand-label">🏡 ⛩️ 🌱 engawa</span>
                         </Link>
                         <button
                             className="navbar-toggle collapsed"
@@ -63,15 +62,13 @@ class Navbar extends React.Component {
                         </button>
                     </div>
                     <div className={navBarCollapse}>
-                        <ul className="nav navbar-nav">
+                        <ul className="nav navbar-nav navbar-right">
                             <li className={this.classForPath('/account')}>
                                 <Link to="/account">My account</Link>
                             </li>
                             <li className={this.classForPath('/account/settings')}>
                                 <Link to="/account/settings">Settings</Link>
                             </li>
-                        </ul>
-                        <ul className="nav navbar-nav navbar-right">
                             <li>
                                 <a href="/login/logout">Sign out</a>
                             </li>

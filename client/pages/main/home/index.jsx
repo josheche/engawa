@@ -15,6 +15,7 @@ class HomePage extends React.Component {
             <section className="section-home container">
                 <Helmet>
                     <title>engawa</title>
+                    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet" />
                 </Helmet>
                 <div className="jumbotron">
                     <h1>engawa</h1>
@@ -28,11 +29,10 @@ class HomePage extends React.Component {
                             </div>
                             <div className="panel-body">
                                 <p>
-                                    Bicycle rights jean shorts la croix
-                                    vexillologist hell of kitsch. Photo booth
-                                    craft beer fixie raw denim hot chicken.
-                                    Pickled adaptogen sartorial brooklyn tilde
-                                    bay area.
+                                    In Japanese, "engawa" is the veranda that serves as a link between
+                                    the outdoor garden and traditional Japanese dwelling,
+                                    typically with sliding panels to protect it from the
+                                    elements or open it completely to the outdoors.
                                 </p>
                                 <Link to="/about" className="btn btn-info btn-block">
                                     Learn more
@@ -43,7 +43,7 @@ class HomePage extends React.Component {
                     <div className="col-sm-4">
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h3 className="panel-title">⛩️ Sign up</h3>
+                                <h3 className="panel-title">⛩️ Gate to your Garden</h3>
                             </div>
                             <div className="panel-body">
                                 <p>
@@ -61,7 +61,7 @@ class HomePage extends React.Component {
                     <div className="col-sm-4">
                         <div className="panel panel-default">
                             <div className="panel-heading">
-                                <h3 className="panel-title">🌱 Contact us</h3>
+                                <h3 className="panel-title">🌱 Monitor Progress</h3>
                             </div>
                             <div className="panel-body">
                                 <p>

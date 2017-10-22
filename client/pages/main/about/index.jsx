@@ -16,7 +16,7 @@ class AboutPage extends React.Component {
                 </Helmet>
                 <div className="row">
                     <div className="col-sm-6">
-                        <h1 className="page-header">About us</h1>
+                        <h1 className="page-header">About engawa</h1>
                         <div className="media">
                             <div className="pull-left">
                                 <div className="media-object">
@@ -24,7 +24,7 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
                             <div className="media-body">
-                                <h4 className="media-heading">Leo Damon</h4>
+                                <h4 className="media-heading">Sensor Monitoring</h4>
                                 <p>
                                     Pork belly salvia tilde chia freegan four
                                     loko. Fingerstache microdosing succulents
@@ -41,7 +41,7 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
                             <div className="media-body">
-                                <h4 className="media-heading">Mathew DiCaprio</h4>
+                                <h4 className="media-heading">Personalized Recommendations</h4>
                                 <p>
                                     Seitan cloud bread messenger bag small
                                     batch. Green juice 90s banjo activated
@@ -51,7 +51,7 @@ class AboutPage extends React.Component {
                                 </p>
                             </div>
                         </div>
-                        
+
                         <div className="media">
                             <div className="pull-left">
                                 <div className="media-object">
@@ -71,11 +71,14 @@ class AboutPage extends React.Component {
                         </div>
                     </div>
                     <div className="col-sm-6 text-center">
-                        <h1 className="page-header">Prestige worldwide</h1>
+                        <h1 className="page-header">Garden</h1>
                         <p className="lead">
-                            The first name in entertainment.
+                            Monitor your home garden with engawa.
                         </p>
-                        <i className="fa fa-volume-up bamf"></i>
+                        <img
+                          className="img-responsive"
+                          src="/public/media/japanese-garden.jpg"
+                        />
                     </div>
                 </div>
             </section>

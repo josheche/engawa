@@ -71,7 +71,10 @@ class Navbar extends React.Component {
                         </button>
                     </div>
                     <div className={navBarCollapse}>
-                        <ul className="nav navbar-nav">
+                        {/* <ul className="nav navbar-nav">
+
+                        </ul> */}
+                        <ul className="nav navbar-nav navbar-right">
                             <li className={this.isPathActive('/')}>
                                 <Link to="/">Home</Link>
                             </li>
@@ -84,8 +87,6 @@ class Navbar extends React.Component {
                             <li className={this.isPathActive('/contact')}>
                                 <Link to="/contact">Contact</Link>
                             </li>
-                        </ul>
-                        <ul className="nav navbar-nav navbar-right">
                             <li className={this.isPathActive(/^\/login/)}>
                                 <Link to="/login">
                                     <i className="fa fa-user"></i> Sign in

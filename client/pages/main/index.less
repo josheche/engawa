@@ -1,10 +1,18 @@
 @import "../../../node_modules/bootstrap/less/variables.less";
 @import "./home/index.less";
 
+// color variables
+@color1: rgba(19, 181, 95, 1);
+@color2: rgba(216, 241, 160, 1);
+@color3: rgba(63, 63, 55, 1);
+@color4: rgba(214, 214, 177, 1);
+@color5: rgba(73, 67, 49, 1);
 
 body {
     font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding-top: 50px;
+    background-color: @color2;
+    letter-spacing: .03rem;
 }
 
 /* prevent ios zoom on input */
@@ -16,10 +24,34 @@ select, textarea, input, .form-control {
     font-size: 20em;
 }
 
+.btn-primary:focus {
+  background-color: @color4;
+  color: @color3;
+}
+
+.btn-primary:hover {
+  background-color: @color4;
+  color: @color3;
+}
+
+.btn-primary:active {
+  background-color: @color4;
+  color: @color3;
+}
+
+.btn-primary {
+  background-color: @color1;
+  border: none;
+}
+
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+  color: @color1;
+}
+
 .navbar {
     .navbar-brand {
         font-weight: bold;
-        color: #333;
+        color: @color1;
         position: relative;
         display: inline-block;
 
@@ -43,16 +75,49 @@ select, textarea, input, .form-control {
     }
 }
 
+// navbar edits
+
+.navbar .navbar-brand .navbar-logo {
+    position: relative;
+    display: inline-block;
+    top: -4px;
+    height: 23px;
+    width: auto;
+}
+
+.navbar-default {
+  background-color: @color2;
+  border: none;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: @color3;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
+  background-color: transparent;
+  color: @color3;
+
+}
+
+// panel edits
+
+.panel-body {
+  padding: 3rem;
+  line-height: 2.5rem;
+  letter-spacing: .03rem;
+}
+
 .footer {
     margin-top: 50px;
-    color: #999;
+    color: @color5;
 
     .container {
-        border-top: 1px solid #ccc;
+        border-top: 1px solid @color5;
         padding: 20px 15px;
     }
     a, a:visited {
-        color: #999;
+        color: @color5;
     }
     .links {
         margin: 0;
@@ -63,7 +128,7 @@ select, textarea, input, .form-control {
             padding-right: 10px;
             margin-right: 10px;
             list-style: none;
-            border-right: 1px dotted #999;
+            border-right: 1px dotted @color5;
         }
         li:last-child {
             padding-right: 0;

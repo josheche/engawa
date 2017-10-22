@@ -33,7 +33,7 @@ class AboutPage extends React.Component {
                                 </p>
                             </div>
                         </div>
-                        <hr />
+
                         <div className="media">
                             <div className="pull-left">
                                 <div className="media-object">
@@ -51,7 +51,7 @@ class AboutPage extends React.Component {
                                 </p>
                             </div>
                         </div>
-                        <hr />
+                        
                         <div className="media">
                             <div className="pull-left">
                                 <div className="media-object">

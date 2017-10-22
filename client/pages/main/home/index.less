@@ -1,6 +1,14 @@
+// color variables
+@color1: rgba(19, 181, 95, 1);
+@color2: rgba(216, 241, 160, 1);
+@color3: rgba(63, 63, 55, 1);
+@color4: rgba(214, 214, 177, 1);
+@color5: rgba(73, 67, 49, 1);
+
 .section-home {
     .jumbotron {
-        background-color: #e7e7e7;
+        background-color: @color2;
+        color: @color1;
         text-align: center;
         padding: 30px 60px;
         border-top-left-radius: 0;
@@ -8,11 +16,13 @@
 
         h1 {
             font-weight: bold;
+            text-shadow: 6px 6px @color5;
         }
 
         @media (max-width: @screen-tablet) {
             h1 {
                 font-size: (@font-size-base * 3.5);
+                text-shadow: 3px 3px @color5;
             }
         }
         @media (min-width: @screen-tablet) {
@@ -21,4 +31,8 @@
             }
         }
     }
+}
+
+.lead-spacing {
+  padding-top: 2rem
 }

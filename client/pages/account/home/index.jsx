@@ -2,6 +2,21 @@
 const Moment = require('moment');
 const React = require('react');
 
+// const url = "http://192.168.69.125/data/temp";
+//
+// let getMatrixData = function (urld) {
+//     fetch(urld)
+//       .then((resp) => resp.text())// Call the fetch function passing the url of the API as a parameter
+//       .then(function(dat) {
+//           // Your code for handling the data you get from the API
+//           console.log(dat);
+//       })
+//       .catch(function(err) {
+//           // This is where you run code if the server returns any errors
+//           console.log(err);
+//   });
+// }
+
 
 class HomePage extends React.Component {
     constructor(props) {
@@ -9,6 +24,7 @@ class HomePage extends React.Component {
         super(props);
 
         this.state = this.getThisMoment();
+
     }
 
     componentDidMount() {
@@ -29,9 +45,9 @@ class HomePage extends React.Component {
     getThisMoment() {
 
         const thisMoment = Moment();
-
+        // thisMoment.format('ss')
         return {
-            second: thisMoment.format('ss'),
+            second: "haha",
             minute: thisMoment.format('mm'),
             hour: thisMoment.format('HH'),
             day: thisMoment.format('DD'),

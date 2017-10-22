@@ -1,9 +1,9 @@
 // VISA API
 var request = require('request');
 
-var config = require('./visa-config/configuration.json');
-var VisaAPIClient = require('./libs/visaapiclient.js');
-var stores = require('./visa-data/stores.json');
+var config = require('/Users/willieavendano/dev/01/engawa/visa-config/configuration.json');
+var VisaAPIClient = require('/Users/willieavendano/dev/01/engawa/libs/visaapiclient.js');
+var stores = require('/Users/willieavendano/dev/01/engawa/visa-data/stores.json');
 var req = request.defaults();
 var userId = config.userId ;
 var password = config.password;

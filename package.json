@@ -43,6 +43,7 @@
     "react": "15.x.x",
     "react-helmet": "5.x.x",
     "redux": "3.x.x",
+    "request": "^2.83.0",
     "slug": "0.9.x",
     "uuid": "3.x.x",
     "vision": "4.x.x",

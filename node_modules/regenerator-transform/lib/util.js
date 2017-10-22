@@ -3,7 +3,6 @@
 exports.__esModule = true;
 exports.runtimeProperty = runtimeProperty;
 exports.isReference = isReference;
-exports.replaceWithOrRemove = replaceWithOrRemove;
 
 var _babelTypes = require("babel-types");
 
@@ -25,12 +24,4 @@ function runtimeProperty(name) {
 
 function isReference(path) {
   return path.isReferenced() || path.parentPath.isAssignmentExpression({ left: path.node });
-}
-
-function replaceWithOrRemove(path, replacement) {
-  if (replacement) {
-    path.replaceWith(replacement);
-  } else {
-    path.remove();
-  }
 }

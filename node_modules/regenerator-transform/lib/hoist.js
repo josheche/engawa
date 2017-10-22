@@ -8,14 +8,16 @@ var _babelTypes = require("babel-types");
 
 var t = _interopRequireWildcard(_babelTypes);
 
-var _util = require("./util");
-
-var util = _interopRequireWildcard(_util);
-
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var hasOwn = Object.prototype.hasOwnProperty;
+
+// The hoist function takes a FunctionExpression or FunctionDeclaration
+// and replaces any Declaration nodes in its body with assignments, then
+// returns a VariableDeclaration containing just the names of the removed
+// declarations.
 /**
  * Copyright (c) 2014, Facebook, Inc.
  * All rights reserved.
@@ -26,12 +28,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
  * the same directory.
  */
 
-var hasOwn = Object.prototype.hasOwnProperty;
-
-// The hoist function takes a FunctionExpression or FunctionDeclaration
-// and replaces any Declaration nodes in its body with assignments, then
-// returns a VariableDeclaration containing just the names of the removed
-// declarations.
 exports.hoist = function (funPath) {
   t.assertFunction(funPath.node);
 
@@ -70,7 +66,7 @@ exports.hoist = function (funPath) {
         } else {
           // We don't need to traverse this expression any further because
           // there can't be any new declarations inside an expression.
-          util.replaceWithOrRemove(path, t.expressionStatement(expr));
+          path.replaceWith(t.expressionStatement(expr));
         }
 
         // Since the original node has been either removed or replaced,
@@ -82,14 +78,14 @@ exports.hoist = function (funPath) {
     ForStatement: function ForStatement(path) {
       var init = path.node.init;
       if (t.isVariableDeclaration(init)) {
-        util.replaceWithOrRemove(path.get("init"), varDeclToExpr(init, false));
+        path.get("init").replaceWith(varDeclToExpr(init, false));
       }
     },
 
     ForXStatement: function ForXStatement(path) {
       var left = path.get("left");
       if (left.isVariableDeclaration()) {
-        util.replaceWithOrRemove(left, varDeclToExpr(left.node, true));
+        left.replaceWith(varDeclToExpr(left.node, true));
       }
     },
 
@@ -111,7 +107,7 @@ exports.hoist = function (funPath) {
         // If the parent node is not a block statement, then we can just
         // replace the declaration with the equivalent assignment form
         // without worrying about hoisting it.
-        util.replaceWithOrRemove(path, assignment);
+        path.replaceWith(assignment);
       }
 
       // Don't hoist variables out of inner functions.

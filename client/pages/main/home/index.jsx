@@ -47,10 +47,10 @@ class HomePage extends React.Component {
                             </div>
                             <div className="panel-body">
                                 <p>
-                                    Health goth skateboard tousled umami, tofu
-                                    squid organic freegan +1 keytar brunch
-                                    post-ironic. Copper mug selfies tattooed
-                                    chicharrones short ribs yolo cardigan.
+                                    An IoT based, digital gate to your garden.
+                                    The "Guardian" sits in your garden and keeps
+                                    tabs on everything that happens. Using special
+                                    technology to gauge and measure every part of your garden.
                                 </p>
                                 <Link to="/signup" className="btn btn-success btn-block">
                                     Learn more
@@ -65,10 +65,10 @@ class HomePage extends React.Component {
                             </div>
                             <div className="panel-body">
                                 <p>
-                                    Roof party readymade tote bag hot chicken
-                                    blog. Fam readymade raclette hella quinoa.
-                                    Cred pour-over yuccie williamsburg shabby
-                                    chic ramps chartreuse messenger bag.
+                                    The "Guardian" monitors progress of an array of
+                                    metrics necessary to ensure the growth of everything
+                                    in your garden. Users have a dashboard with all their
+                                    garden's stats. Have any questions? Contact us below.
                                 </p>
                                 <Link to="/contact" className="btn btn-warning btn-block">
                                     Learn more

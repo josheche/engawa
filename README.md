@@ -1,4 +1,4 @@
-# Engawa 🏡 ⛩ 🌱 
+# Engawa 🏡 ⛩ 🌱
 
 **engawa 縁側** - The veranda and/or gate that serves as a link between the outdoor garden and traditional Japanese dwelling. Meant to protect it from the elements or open it completely to the outdoors.
 
@@ -185,21 +185,6 @@ $ npm test
 # No global variable leaks detected
 # Coverage: 100.00%
 # Linting results: No issues
-```
-
-### Targeted tests
-
-If you'd like to run a specific test or subset of tests you can use the
-`test-client` and `test-server` scripts included in the `package.json` file.
-
-You specificy the path(s) via the `TEST_TARGET` environment variable like:
-
-```bash
-$ TEST_TARGET=test/server/web/main.js npm run test-server
-
-# or
-
-$ TEST_TARGET=test/client/actions/api.js npm run test-client
 ```
 
 ## Deploying to Heroku

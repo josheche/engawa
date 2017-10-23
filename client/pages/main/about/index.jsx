@@ -24,7 +24,7 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
                             <div className="media-body">
-                                <h4 className="media-heading">Sensor Monitoring</h4>
+                                <h4 className="media-heading">Garden Sensor Monitoring</h4>
                                 <p>
                                     Pork belly salvia tilde chia freegan four
                                     loko. Fingerstache microdosing succulents
@@ -41,7 +41,7 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
                             <div className="media-body">
-                                <h4 className="media-heading">Personalized Recommendations</h4>
+                                <h4 className="media-heading">Garden Stats Dashboard</h4>
                                 <p>
                                     Seitan cloud bread messenger bag small
                                     batch. Green juice 90s banjo activated
@@ -59,7 +59,7 @@ class AboutPage extends React.Component {
                                 </div>
                             </div>
                             <div className="media-body">
-                                <h4 className="media-heading">Nick Jackson</h4>
+                                <h4 className="media-heading">"Guardian" Artificial Intelligence</h4>
                                 <p>
                                     Salvia man braid four dollar toast
                                     chicharrones, selvage hell of selfies.
@@ -77,7 +77,7 @@ class AboutPage extends React.Component {
                         </p>
                         <img
                           className="img-responsive"
-                          src="/public/media/engawa-prototype.jpeg"
+                          src="/public/media/engawa_prototype.jpg"
                         />
                     </div>
                 </div>

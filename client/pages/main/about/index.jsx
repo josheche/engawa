@@ -77,7 +77,7 @@ class AboutPage extends React.Component {
                         </p>
                         <img
                           className="img-responsive"
-                          src="/public/media/japanese-garden.jpg"
+                          src="/public/media/engawa-prototype.jpg"
                         />
                     </div>
                 </div>
